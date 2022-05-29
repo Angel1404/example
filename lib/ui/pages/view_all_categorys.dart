@@ -1,7 +1,7 @@
-import 'package:example/data/models/routes_models.dart';
-import 'package:example/routes/app_pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:example/data/models/routes_models.dart';
+import 'package:example/routes/app_pages.dart';
 
 class ViewAllCategorys extends StatelessWidget {
   const ViewAllCategorys({Key? key}) : super(key: key);

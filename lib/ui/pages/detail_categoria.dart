@@ -1,7 +1,7 @@
-import 'package:example/data/models/routes_models.dart';
-import 'package:example/ui/routes_ui.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:example/data/models/routes_models.dart';
+import 'package:example/ui/global_widgets/widgets.dart';
 
 class DetailCategoria extends StatelessWidget {
   const DetailCategoria({Key? key}) : super(key: key);

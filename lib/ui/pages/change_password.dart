@@ -1,7 +1,7 @@
-import 'package:example/routes/app_pages.dart';
-import 'package:example/ui/global_widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:example/routes/app_pages.dart';
+import 'package:example/ui/global_widgets/widgets.dart';
 
 class ChangePassword extends StatelessWidget {
   const ChangePassword({Key? key}) : super(key: key);
