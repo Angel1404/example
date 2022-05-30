@@ -51,9 +51,11 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return SizedBox(
-      height: Get.height,
-      width: Get.width,
+      height: size.height,
+      width: size.width,
       child: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -61,7 +63,7 @@ class _Body extends StatelessWidget {
             TituloBodyHome(title1: 'Hot Deal: ', title2: 'Limited Offer', onTap: () {}),
             Container(
               color: const Color(0xffF2F2F2),
-              height: Get.height * .23,
+              height: size.height * .23,
               width: double.infinity,
               child: ListView.builder(
                 padding: const EdgeInsets.only(left: 10),
@@ -76,7 +78,7 @@ class _Body extends StatelessWidget {
             ),
             TituloBodyHome(title1: 'Premium Member Deal', title2: 'View All', onTap: () {}),
             Container(
-                height: Get.height * .4,
+                height: size.height * .4,
                 color: const Color(0xffF2F2F2),
                 width: double.infinity,
                 child: ListView(

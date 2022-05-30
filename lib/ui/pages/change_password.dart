@@ -43,9 +43,11 @@ class _Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return SizedBox(
-      height: Get.height,
-      width: Get.width,
+      height: size.height,
+      width: size.width,
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,

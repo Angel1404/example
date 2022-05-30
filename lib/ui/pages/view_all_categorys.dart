@@ -8,6 +8,8 @@ class ViewAllCategorys extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Scaffold(
       backgroundColor: const Color(0xffF2F2F2),
       appBar: AppBar(
@@ -42,8 +44,8 @@ class ViewAllCategorys extends StatelessWidget {
         ],
       ),
       body: SizedBox(
-        height: Get.height,
-        width: Get.width,
+        height: size.height,
+        width: size.width,
         child: const _CarruselBodyCategory(),
       ),
     );

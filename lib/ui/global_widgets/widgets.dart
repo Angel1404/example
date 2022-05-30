@@ -324,8 +324,10 @@ class CarruselBodyCategory extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return SizedBox(
-      height: Get.height * .18,
+      height: size.height * .18,
       width: double.infinity,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
